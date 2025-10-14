@@ -1,12 +1,16 @@
 import Layout from './components/Layout'
+import AboutSection from './components/AboutSection'
+import ProjectsSection from './components/ProjectsSection'
+import ContactSection from './components/ContactSection'
+import HomeSection from './components/HomeSection'
 
 export default function Home() {
   return (
     <Layout>
-      <section className="pt-24">
-        <h2 className="text-3xl font-bold mb-4 text-cyan-400">Développeur en Intelligence Artificielle</h2>
-        <p>Spécialisé en deep learning, MLOps et NLP. Conception de solutions IA performantes et scalables.</p>
-      </section>
+      <HomeSection />
+      <AboutSection />
+      <ProjectsSection />
+      <ContactSection />
     </Layout>
   )
 }
