@@ -19,13 +19,13 @@ export default function Home({ setPage }) {
         </p>
         <div className="flex gap-4 justify-center pt-4">
           <button
-            onClick={() => setPage('Projets')}
+            onClick={() => setPage(1)}
             className="px-8 py-3 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-full font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300 transform hover:scale-105"
           >
             Voir mes projets
           </button>
           <button
-            onClick={() => setPage('Contact')}
+            onClick={() => setPage(3)}
             className="px-8 py-3 border-2 border-cyan-400 rounded-full font-semibold hover:bg-cyan-400/10 transition-all duration-300"
           >
             Me contacter

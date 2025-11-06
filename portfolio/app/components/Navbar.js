@@ -9,7 +9,7 @@ export default function Navbar({ setPage, page }) {
           Clément Parisot
         </h1>
         <div className="flex gap-6">
-          {['Accueil', 'À propos', 'Projets', 'Contact'].map((item, idx) => (
+          {['Accueil', 'Projets', 'À propos', 'Contact'].map((item, idx) => (
             <button
               key={item}
               onClick={() => setPage(idx)}

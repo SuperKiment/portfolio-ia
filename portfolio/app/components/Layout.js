@@ -1,6 +1,5 @@
 'use client'
 import { useState } from 'react'
-import { motion } from 'framer-motion'
 import Navbar from './Navbar'
 import '../globals.css'
 
@@ -13,16 +12,7 @@ export default function Layout({ children }) {
         <div className="h-screen bg-gray-900 text-gray-100 font-inter">
           <Navbar setPage={setPage} />
           <div className="h-full pt-20 relative">
-            <motion.div
-              className="flex h-full"
-              animate={{ x: `-${page * 100}vw` }}
-              transition={{
-                ease: [0.4, 0.0, 0.2, 1], // cubic-bezier douce (équivalent easeInOut standard)
-                duration: 0.9,
-              }}
-            >
-              {children}
-            </motion.div>
+            {children}
           </div>
         </div>
       </body>

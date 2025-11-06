@@ -22,9 +22,9 @@ export default function Portfolio() {
                         animate={{ x: `-${page * 100}vw` }}
                         transition={{ duration: 0.8, ease: 'easeInOut' }}
                     >
-                        <section className="min-w-full h-full flex items-center justify-center"><Home /></section>
-                        <section className="min-w-full h-full flex items-center justify-center"><About /></section>
+                        <section className="min-w-full h-full flex items-center justify-center"><Home setPage={setPage} /></section>
                         <section className="min-w-full h-full flex items-center justify-center"><ProjectsSection /></section>
+                        <section className="min-w-full h-full flex items-center justify-center"><About /></section>
                         <section className="min-w-full h-full flex items-center justify-center"><ContactSection /></section>
                     </motion.div>
                 </div>
