@@ -10,7 +10,7 @@ export default function Layout({ children }) {
   return (
     <html lang="fr">
       <body>
-        <div className="h-screen overflow-hidden bg-gray-900 text-gray-100 font-inter">
+        <div className="h-screen bg-gray-900 text-gray-100 font-inter">
           <Navbar setPage={setPage} />
           <div className="h-full pt-20 relative">
             <motion.div

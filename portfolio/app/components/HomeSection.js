@@ -1,6 +1,6 @@
 export default function Home({ setPage }) {
   return (
-    <section className="min-w-screen h-screen flex items-center justify-center px-8">
+    <section className="pt-24">
       <div className="max-w-4xl text-center space-y-8">
         <div className="inline-block">
           <span className="text-cyan-400 text-sm font-semibold tracking-wider uppercase">

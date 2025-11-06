@@ -15,25 +15,20 @@ export default function Portfolio() {
     return (
         <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 text-white">
             <Navbar setPage={setPage} />
-            <div className="pt-20">
-                <div
-                    className="flex transition-transform duration-700 ease-out"
-                    style={{ transform: `translateX(-${page * 100}vw)` }}
-                >
+            <div>
+                <div className="h-screen overflow-hidden">
                     <motion.div
                         className="flex h-full"
                         animate={{ x: `-${page * 100}vw` }}
-                        transition={{
-                            ease: [0.4, 0.0, 0.2, 1], // cubic-bezier douce (équivalent easeInOut standard)
-                            duration: 0.9,
-                        }}
+                        transition={{ duration: 0.8, ease: 'easeInOut' }}
                     >
-                        <Home setPage={setPage} />
-                        <About setPage={setPage} />
-                        <ProjectsSection setPage={setPage} />
-                        <ContactSection setPage={setPage} />
+                        <section className="min-w-full h-full flex items-center justify-center"><Home /></section>
+                        <section className="min-w-full h-full flex items-center justify-center"><About /></section>
+                        <section className="min-w-full h-full flex items-center justify-center"><ProjectsSection /></section>
+                        <section className="min-w-full h-full flex items-center justify-center"><ContactSection /></section>
                     </motion.div>
                 </div>
+
             </div>
 
             <Footer />
